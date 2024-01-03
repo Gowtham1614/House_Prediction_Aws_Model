@@ -1,4 +1,3 @@
-from tkinter import Place
 from flask import Flask,render_template,request
 import numpy as np
 import pickle
@@ -40,5 +39,5 @@ def predict():
 #now we will pass above predicted data to template
     return render_template('index.html',prediction=prediction)
 
-
-application.run()
+if __name__ == "__main__:
+    application.run()
